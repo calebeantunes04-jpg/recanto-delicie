@@ -11,6 +11,8 @@
   <meta property="og:description" content="Os melhores cookies de Santa Cruz! Assados na hora pra você. Peça pelo WhatsApp.">
   <meta property="og:type" content="website">
   <title>Recanto Deliciê — Os Melhores Cookies de Santa Cruz | Doceria Artesanal</title>
+  <!-- Favicon -->
+  <link rel="icon" type="image/png" href="images/logo.png">
 
   <!-- Google Fonts -->
   <link rel="preconnect" href="https://fonts.googleapis.com">
@@ -75,20 +77,7 @@
       </div>
       <div class="hero-visual">
         <div class="hero-circle">
-          <!-- Logo SVG inline baseada na imagem fornecida -->
-          <svg class="logo-img" viewBox="0 0 200 200" fill="none" xmlns="http://www.w3.org/2000/svg">
-            <rect width="200" height="200" rx="30" fill="#F49AC1"/>
-            <path d="M85 55c-22 0-40 18-40 40s18 40 40 40h5c-15-5-25-19-25-35s10-30 25-35h-5z" fill="white" stroke="white" stroke-width="6" stroke-linecap="round"/>
-            <path d="M65 95c0 22 16 40 35 40 16 0 30-12 35-28" fill="none" stroke="white" stroke-width="8" stroke-linecap="round"/>
-            <path d="M60 75c5-12 18-20 32-20 20 0 36 16 36 36 0 8-3 16-8 22" fill="none" stroke="white" stroke-width="8" stroke-linecap="round"/>
-            <circle cx="78" cy="115" r="10" fill="none" stroke="white" stroke-width="6"/>
-            <path d="M72 121c-4 8-6 18-4 22 3 5 8 3 10-2s4-14 2-18" fill="white"/>
-            <!-- Cookie slice -->
-            <path d="M130 62l18 10-5 20-15 5z" fill="rgba(255,255,255,0.5)" stroke="white" stroke-width="3"/>
-            <circle cx="138" cy="78" r="2.5" fill="#F49AC1"/>
-            <circle cx="132" cy="72" r="2" fill="#F49AC1"/>
-            <circle cx="140" cy="68" r="1.5" fill="#F49AC1"/>
-          </svg>
+          <img src="images/hero_cookie.jpg" alt="Cookie Recheado" class="hero-cookie-img">
           <span class="hero-circle-text">Feito com amor 💕</span>
         </div>
       </div>
@@ -352,11 +341,6 @@
       <p class="section-subtitle reveal">Doces especiais feitos sob medida para você</p>
       <span class="section-divider reveal"></span>
 
-      <div class="encomenda-aviso reveal">
-        <span class="icon-aviso">⚠️</span>
-        <p>Todos os produtos deste grupo são feitos apenas <span>sob encomenda</span>!<br>Mínimo <span>24h de antecedência</span>.</p>
-      </div>
-
       <div class="encomendas-grid">
         <!-- Torta de Limão Inteira -->
         <div class="product-card reveal" id="tortaLimao">
@@ -463,40 +447,14 @@
       <span class="section-divider reveal"></span>
 
       <div class="depoimentos-grid">
-        <div class="depoimento-card reveal">
-          <div class="depoimento-stars">★★★★★</div>
-          <p class="depoimento-text">"Os melhores cookies que já comi na vida! Crocantes por fora, macios por dentro e com recheio de verdade. Não consigo parar de pedir!"</p>
-          <div class="depoimento-autor">
-            <div class="depoimento-avatar">A</div>
-            <div>
-              <div class="depoimento-nome">Ana Clara</div>
-              <div class="depoimento-local">Santa Cruz, RJ</div>
-            </div>
-          </div>
+        <div class="depoimento-card reveal" style="padding: 0; overflow: hidden; display: flex; align-items: center; justify-content: center;">
+          <img src="images/feedback1.webp" alt="Depoimento 1" class="depoimento-img">
         </div>
-
-        <div class="depoimento-card reveal">
-          <div class="depoimento-stars">★★★★★</div>
-          <p class="depoimento-text">"Encomendei a torta cookie para o aniversário da minha filha e foi um sucesso absoluto! Todo mundo elogiou. Super recomendo!"</p>
-          <div class="depoimento-autor">
-            <div class="depoimento-avatar">M</div>
-            <div>
-              <div class="depoimento-nome">Mariana Souza</div>
-              <div class="depoimento-local">Santa Cruz, RJ</div>
-            </div>
-          </div>
+        <div class="depoimento-card reveal" style="padding: 0; overflow: hidden; display: flex; align-items: center; justify-content: center;">
+          <img src="images/feedback2.webp" alt="Depoimento 2" class="depoimento-img">
         </div>
-
-        <div class="depoimento-card reveal">
-          <div class="depoimento-stars">★★★★★</div>
-          <p class="depoimento-text">"O cookie de Ninho com Nutella é simplesmente divino! E o atendimento pelo WhatsApp é super rápido. Virei cliente fiel!"</p>
-          <div class="depoimento-autor">
-            <div class="depoimento-avatar">R</div>
-            <div>
-              <div class="depoimento-nome">Rafael Lima</div>
-              <div class="depoimento-local">Paciência, RJ</div>
-            </div>
-          </div>
+        <div class="depoimento-card reveal" style="padding: 0; overflow: hidden; display: flex; align-items: center; justify-content: center;">
+          <img src="images/feedback3.webp" alt="Depoimento 3" class="depoimento-img">
         </div>
       </div>
     </div>
@@ -557,14 +515,7 @@
   <footer class="footer" id="rodape">
     <div class="container">
       <div class="footer-logo">
-        <svg width="36" height="36" viewBox="0 0 200 200" fill="none" xmlns="http://www.w3.org/2000/svg">
-          <rect width="200" height="200" rx="30" fill="#F49AC1"/>
-          <path d="M85 55c-22 0-40 18-40 40s18 40 40 40h5c-15-5-25-19-25-35s10-30 25-35h-5z" fill="white" stroke="white" stroke-width="6" stroke-linecap="round"/>
-          <path d="M65 95c0 22 16 40 35 40 16 0 30-12 35-28" fill="none" stroke="white" stroke-width="8" stroke-linecap="round"/>
-          <path d="M60 75c5-12 18-20 32-20 20 0 36 16 36 36 0 8-3 16-8 22" fill="none" stroke="white" stroke-width="8" stroke-linecap="round"/>
-          <circle cx="78" cy="115" r="10" fill="none" stroke="white" stroke-width="6"/>
-          <path d="M72 121c-4 8-6 18-4 22 3 5 8 3 10-2s4-14 2-18" fill="white"/>
-        </svg>
+        <img src="images/logo.png" alt="Logo Recanto Deliciê" width="36" height="36" style="border-radius: 8px;">
         <span class="footer-logo-text">Recanto Deliciê</span>
       </div>
 
