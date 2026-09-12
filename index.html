@@ -1,0 +1,596 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta name="description" content="Recanto Deliciê — Os melhores cookies artesanais de Santa Cruz, Rio de Janeiro. Cookies recheados, tortas e doces feitos com carinho. Peça pelo WhatsApp!">
+  <meta name="keywords" content="cookies, cookies artesanais, doceria, Santa Cruz, Rio de Janeiro, cookies recheados, torta cookie, encomendas, doces artesanais">
+  <meta name="author" content="Recanto Deliciê">
+  <meta name="theme-color" content="#F49AC1">
+  <meta property="og:title" content="Recanto Deliciê — Cookies Artesanais em Santa Cruz">
+  <meta property="og:description" content="Os melhores cookies de Santa Cruz! Assados na hora pra você. Peça pelo WhatsApp.">
+  <meta property="og:type" content="website">
+  <title>Recanto Deliciê — Os Melhores Cookies de Santa Cruz | Doceria Artesanal</title>
+
+  <!-- Google Fonts -->
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700;800&family=Playfair+Display:ital,wght@0,400;0,600;0,700;0,800;1,400;1,600&display=swap" rel="stylesheet">
+
+  <!-- CSS -->
+  <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+
+  <!-- ==========================================
+       NAVEGAÇÃO
+       ========================================== -->
+  <nav class="navbar" id="navbar">
+    <div class="container">
+      <a href="#hero" class="nav-logo">
+        <img src="images/logo.png" alt="Logo Recanto Deliciê" onerror="this.style.display='none'">
+        <span class="nav-logo-text">Recanto Deliciê</span>
+      </a>
+      <div class="nav-links" id="navLinks">
+        <a href="#cardapio">Cardápio</a>
+        <a href="#encomendas">Encomendas</a>
+        <a href="#sobre">Sobre</a>
+        <a href="#contato">Contato</a>
+        <a href="https://wa.me/5521974107949" target="_blank" rel="noopener" class="nav-cta">
+          <svg width="16" height="16" viewBox="0 0 24 24" fill="currentColor" style="display:inline;vertical-align:middle;margin-right:4px"><path d="M17.472 14.382c-.297-.149-1.758-.867-2.03-.967-.273-.099-.471-.148-.67.15-.197.297-.767.966-.94 1.164-.173.199-.347.223-.644.075-.297-.15-1.255-.463-2.39-1.475-.883-.788-1.48-1.761-1.653-2.059-.173-.297-.018-.458.13-.606.134-.133.298-.347.446-.52.149-.174.198-.298.298-.497.099-.198.05-.371-.025-.52-.075-.149-.669-1.612-.916-2.207-.242-.579-.487-.5-.669-.51-.173-.008-.371-.01-.57-.01-.198 0-.52.074-.792.372-.272.297-1.04 1.016-1.04 2.479 0 1.462 1.065 2.875 1.213 3.074.149.198 2.096 3.2 5.077 4.487.709.306 1.262.489 1.694.625.712.227 1.36.195 1.871.118.571-.085 1.758-.719 2.006-1.413.248-.694.248-1.289.173-1.413-.074-.124-.272-.198-.57-.347m-5.421 7.403h-.004a9.87 9.87 0 01-5.031-1.378l-.361-.214-3.741.982.998-3.648-.235-.374a9.86 9.86 0 01-1.51-5.26c.001-5.45 4.436-9.884 9.888-9.884 2.64 0 5.122 1.03 6.988 2.898a9.825 9.825 0 012.893 6.994c-.003 5.45-4.437 9.884-9.885 9.884m8.413-18.297A11.815 11.815 0 0012.05 0C5.495 0 .16 5.335.157 11.892c0 2.096.547 4.142 1.588 5.945L.057 24l6.305-1.654a11.882 11.882 0 005.683 1.448h.005c6.554 0 11.89-5.335 11.893-11.893a11.821 11.821 0 00-3.48-8.413z"/></svg>
+          Pedir
+        </a>
+      </div>
+      <button class="menu-toggle" id="menuToggle" aria-label="Abrir menu">
+        <span></span>
+        <span></span>
+        <span></span>
+      </button>
+    </div>
+  </nav>
+  <div class="nav-overlay" id="navOverlay"></div>
+
+  <!-- ==========================================
+       HERO
+       ========================================== -->
+  <section class="hero" id="hero">
+    <div class="hero-dot"></div>
+    <div class="hero-dot"></div>
+    <div class="hero-dot"></div>
+    <div class="container">
+      <div class="hero-content">
+        <div class="hero-badge">
+          <span class="icon">🍪</span>
+          Doceria Artesanal • Santa Cruz, RJ
+        </div>
+        <h1 class="hero-title">
+          Recanto <span class="highlight">Deliciê</span>
+        </h1>
+        <p class="hero-slogan">Os melhores cookies de Santa Cruz!</p>
+        <p class="hero-subtitle">Assados na hora pra você ✨</p>
+        <a href="https://wa.me/5521974107949" target="_blank" rel="noopener" class="hero-cta" id="heroCta">
+          <svg viewBox="0 0 24 24" fill="currentColor"><path d="M17.472 14.382c-.297-.149-1.758-.867-2.03-.967-.273-.099-.471-.148-.67.15-.197.297-.767.966-.94 1.164-.173.199-.347.223-.644.075-.297-.15-1.255-.463-2.39-1.475-.883-.788-1.48-1.761-1.653-2.059-.173-.297-.018-.458.13-.606.134-.133.298-.347.446-.52.149-.174.198-.298.298-.497.099-.198.05-.371-.025-.52-.075-.149-.669-1.612-.916-2.207-.242-.579-.487-.5-.669-.51-.173-.008-.371-.01-.57-.01-.198 0-.52.074-.792.372-.272.297-1.04 1.016-1.04 2.479 0 1.462 1.065 2.875 1.213 3.074.149.198 2.096 3.2 5.077 4.487.709.306 1.262.489 1.694.625.712.227 1.36.195 1.871.118.571-.085 1.758-.719 2.006-1.413.248-.694.248-1.289.173-1.413-.074-.124-.272-.198-.57-.347m-5.421 7.403h-.004a9.87 9.87 0 01-5.031-1.378l-.361-.214-3.741.982.998-3.648-.235-.374a9.86 9.86 0 01-1.51-5.26c.001-5.45 4.436-9.884 9.888-9.884 2.64 0 5.122 1.03 6.988 2.898a9.825 9.825 0 012.893 6.994c-.003 5.45-4.437 9.884-9.885 9.884m8.413-18.297A11.815 11.815 0 0012.05 0C5.495 0 .16 5.335.157 11.892c0 2.096.547 4.142 1.588 5.945L.057 24l6.305-1.654a11.882 11.882 0 005.683 1.448h.005c6.554 0 11.89-5.335 11.893-11.893a11.821 11.821 0 00-3.48-8.413z"/></svg>
+          Peça pelo WhatsApp
+        </a>
+      </div>
+      <div class="hero-visual">
+        <div class="hero-circle">
+          <!-- Logo SVG inline baseada na imagem fornecida -->
+          <svg class="logo-img" viewBox="0 0 200 200" fill="none" xmlns="http://www.w3.org/2000/svg">
+            <rect width="200" height="200" rx="30" fill="#F49AC1"/>
+            <path d="M85 55c-22 0-40 18-40 40s18 40 40 40h5c-15-5-25-19-25-35s10-30 25-35h-5z" fill="white" stroke="white" stroke-width="6" stroke-linecap="round"/>
+            <path d="M65 95c0 22 16 40 35 40 16 0 30-12 35-28" fill="none" stroke="white" stroke-width="8" stroke-linecap="round"/>
+            <path d="M60 75c5-12 18-20 32-20 20 0 36 16 36 36 0 8-3 16-8 22" fill="none" stroke="white" stroke-width="8" stroke-linecap="round"/>
+            <circle cx="78" cy="115" r="10" fill="none" stroke="white" stroke-width="6"/>
+            <path d="M72 121c-4 8-6 18-4 22 3 5 8 3 10-2s4-14 2-18" fill="white"/>
+            <!-- Cookie slice -->
+            <path d="M130 62l18 10-5 20-15 5z" fill="rgba(255,255,255,0.5)" stroke="white" stroke-width="3"/>
+            <circle cx="138" cy="78" r="2.5" fill="#F49AC1"/>
+            <circle cx="132" cy="72" r="2" fill="#F49AC1"/>
+            <circle cx="140" cy="68" r="1.5" fill="#F49AC1"/>
+          </svg>
+          <span class="hero-circle-text">Feito com amor 💕</span>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- ==========================================
+       CARDÁPIO — COOKIES
+       ========================================== -->
+  <section class="cookies-section" id="cardapio">
+    <div class="container">
+      <h2 class="section-title reveal">🍪 Nossos Cookies</h2>
+      <p class="section-subtitle reveal">O carro-chefe da casa — crocantes, recheados e irresistíveis</p>
+      <span class="section-divider reveal"></span>
+
+      <!-- COMBO em destaque -->
+      <div class="combo-card reveal" id="comboDelicie">
+        <img src="images/combo_delicie.jpg" alt="Combo Deliciê — 5 cookies" class="combo-img">
+        <div class="combo-content">
+          <span class="combo-badge">🔥 Promoção</span>
+          <h3 class="combo-name">Combo Deliciê</h3>
+          <p class="combo-desc">Escolha 5 cookies participantes e monte o seu combo perfeito! Ideal para dividir com quem você ama.</p>
+          <div class="combo-price-row">
+            <span class="combo-price-old">R$ 70,00</span>
+            <span class="combo-price-current">R$ 65,00</span>
+          </div>
+          <a href="https://wa.me/5521974107949?text=Ol%C3%A1!%20Gostaria%20de%20pedir%20o%20Combo%20Delici%C3%AA!" target="_blank" rel="noopener" class="combo-btn">
+            <svg width="18" height="18" viewBox="0 0 24 24" fill="currentColor"><path d="M17.472 14.382c-.297-.149-1.758-.867-2.03-.967-.273-.099-.471-.148-.67.15-.197.297-.767.966-.94 1.164-.173.199-.347.223-.644.075-.297-.15-1.255-.463-2.39-1.475-.883-.788-1.48-1.761-1.653-2.059-.173-.297-.018-.458.13-.606.134-.133.298-.347.446-.52.149-.174.198-.298.298-.497.099-.198.05-.371-.025-.52-.075-.149-.669-1.612-.916-2.207-.242-.579-.487-.5-.669-.51-.173-.008-.371-.01-.57-.01-.198 0-.52.074-.792.372-.272.297-1.04 1.016-1.04 2.479 0 1.462 1.065 2.875 1.213 3.074.149.198 2.096 3.2 5.077 4.487.709.306 1.262.489 1.694.625.712.227 1.36.195 1.871.118.571-.085 1.758-.719 2.006-1.413.248-.694.248-1.289.173-1.413-.074-.124-.272-.198-.57-.347m-5.421 7.403h-.004a9.87 9.87 0 01-5.031-1.378l-.361-.214-3.741.982.998-3.648-.235-.374a9.86 9.86 0 01-1.51-5.26c.001-5.45 4.436-9.884 9.888-9.884 2.64 0 5.122 1.03 6.988 2.898a9.825 9.825 0 012.893 6.994c-.003 5.45-4.437 9.884-9.885 9.884m8.413-18.297A11.815 11.815 0 0012.05 0C5.495 0 .16 5.335.157 11.892c0 2.096.547 4.142 1.588 5.945L.057 24l6.305-1.654a11.882 11.882 0 005.683 1.448h.005c6.554 0 11.89-5.335 11.893-11.893a11.821 11.821 0 00-3.48-8.413z"/></svg>
+            Pedir Combo
+          </a>
+        </div>
+      </div>
+
+      <!-- Grid de Cookies -->
+      <div class="products-grid" style="margin-top: 2rem;">
+
+        <!-- Alpino Black -->
+        <div class="product-card reveal" id="alpinoBlack">
+          <div class="product-img-wrapper">
+            <img src="images/cookie_alpino_black.jpg" alt="Cookie Alpino Black" loading="lazy">
+          </div>
+          <div class="product-info">
+            <h3 class="product-name">Alpino Black</h3>
+            <p class="product-desc">Massa black com gotas de chocolate meio amargo e branco, recheado com muito sabor.</p>
+            <div class="product-price">
+              <span class="price-current">R$ 15,00</span>
+            </div>
+            <a href="https://wa.me/5521974107949?text=Ol%C3%A1!%20Gostaria%20de%20pedir%20o%20cookie%20Alpino%20Black!" target="_blank" rel="noopener" class="btn-pedir">
+              Pedir 🛒
+            </a>
+          </div>
+        </div>
+
+        <!-- Americano -->
+        <div class="product-card reveal" id="americano">
+          <div class="product-img-wrapper">
+            <img src="images/cookie_americano.jpg" alt="Cookie Americano" loading="lazy">
+          </div>
+          <div class="product-info">
+            <h3 class="product-name">Americano</h3>
+            <p class="product-desc">Feito com a técnica brown butter, crocante por fora, úmido por dentro, com gotas de chocolate.</p>
+            <div class="product-price">
+              <span class="price-current">R$ 14,00</span>
+            </div>
+            <a href="https://wa.me/5521974107949?text=Ol%C3%A1!%20Gostaria%20de%20pedir%20o%20cookie%20Americano!" target="_blank" rel="noopener" class="btn-pedir">
+              Pedir 🛒
+            </a>
+          </div>
+        </div>
+
+        <!-- New York Tradicional — ESGOTADO -->
+        <div class="product-card esgotado reveal" id="nyTradicional">
+          <div class="product-img-wrapper">
+            <span class="product-badge badge-esgotado">Esgotado</span>
+            <img src="images/cookie_newyork_trad.jpg" alt="Cookie New York Tradicional" loading="lazy">
+          </div>
+          <div class="product-info">
+            <h3 class="product-name">New York Tradicional</h3>
+            <p class="product-desc">Massa tradicional, super crocante por fora e úmido por dentro, com muuuito chocolate!</p>
+            <div class="product-price">
+              <span class="price-current">R$ 14,00</span>
+            </div>
+            <span class="btn-pedir">Esgotado</span>
+          </div>
+        </div>
+
+        <!-- New York Meio Amargo -->
+        <div class="product-card reveal" id="nyMeioAmargo">
+          <div class="product-img-wrapper">
+            <img src="images/cookie_newyork_amargo.jpg" alt="Cookie New York Meio Amargo" loading="lazy">
+          </div>
+          <div class="product-info">
+            <h3 class="product-name">New York Meio Amargo</h3>
+            <p class="product-desc">Sem recheio, feito com cacau e gotas de chocolate. Mais equilibrado e intenso.</p>
+            <div class="product-price">
+              <span class="price-current">R$ 14,00</span>
+            </div>
+            <a href="https://wa.me/5521974107949?text=Ol%C3%A1!%20Gostaria%20de%20pedir%20o%20cookie%20New%20York%20Meio%20Amargo!" target="_blank" rel="noopener" class="btn-pedir">
+              Pedir 🛒
+            </a>
+          </div>
+        </div>
+
+        <!-- Coco com Doce de Leite -->
+        <div class="product-card reveal" id="cocoDoceLeite">
+          <div class="product-img-wrapper">
+            <img src="images/cookie_coco_doce_leite.jpg" alt="Cookie Coco com Doce de Leite" loading="lazy">
+          </div>
+          <div class="product-info">
+            <h3 class="product-name">Coco com Doce de Leite</h3>
+            <p class="product-desc">Massa com gotas de chocolate branco, recheado com brigadeiro de coco e doce de leite puro.</p>
+            <div class="product-price">
+              <span class="price-current">R$ 15,00</span>
+            </div>
+            <a href="https://wa.me/5521974107949?text=Ol%C3%A1!%20Gostaria%20de%20pedir%20o%20cookie%20Coco%20com%20Doce%20de%20Leite!" target="_blank" rel="noopener" class="btn-pedir">
+              Pedir 🛒
+            </a>
+          </div>
+        </div>
+
+        <!-- Oreo -->
+        <div class="product-card reveal" id="oreo">
+          <div class="product-img-wrapper">
+            <img src="images/cookie_oreo.jpg" alt="Cookie Oreo" loading="lazy">
+          </div>
+          <div class="product-info">
+            <h3 class="product-name">Oreo</h3>
+            <p class="product-desc">Massa black com gotas de chocolate branco, recheado com chocolate branco e Oreo picado.</p>
+            <div class="product-price">
+              <span class="price-current">R$ 14,00</span>
+            </div>
+            <a href="https://wa.me/5521974107949?text=Ol%C3%A1!%20Gostaria%20de%20pedir%20o%20cookie%20Oreo!" target="_blank" rel="noopener" class="btn-pedir">
+              Pedir 🛒
+            </a>
+          </div>
+        </div>
+
+        <!-- Triplo Chocolate — ESGOTADO -->
+        <div class="product-card esgotado reveal" id="triploChocolate">
+          <div class="product-img-wrapper">
+            <span class="product-badge badge-esgotado">Esgotado</span>
+            <img src="images/cookie_triplo_choc.jpg" alt="Cookie Triplo Chocolate" loading="lazy">
+          </div>
+          <div class="product-info">
+            <h3 class="product-name">Triplo Chocolate</h3>
+            <p class="product-desc">Cacau black e gotas de chocolate nobre, recheado com chocolate nobre. Puro pecado!</p>
+            <div class="product-price">
+              <span class="price-current">R$ 14,00</span>
+            </div>
+            <span class="btn-pedir">Esgotado</span>
+          </div>
+        </div>
+
+        <!-- Tradicional com Nutella -->
+        <div class="product-card reveal" id="tradNutella">
+          <div class="product-img-wrapper">
+            <img src="images/cookie_trad_nutella.jpg" alt="Cookie Tradicional com Nutella" loading="lazy">
+          </div>
+          <div class="product-info">
+            <h3 class="product-name">Tradicional com Nutella</h3>
+            <p class="product-desc">Crocante por fora, úmido por dentro, recheado com muuuita Nutella de verdade!</p>
+            <div class="product-price">
+              <span class="price-current">R$ 14,00</span>
+            </div>
+            <a href="https://wa.me/5521974107949?text=Ol%C3%A1!%20Gostaria%20de%20pedir%20o%20cookie%20Tradicional%20com%20Nutella!" target="_blank" rel="noopener" class="btn-pedir">
+              Pedir 🛒
+            </a>
+          </div>
+        </div>
+
+        <!-- Ninho com Nutella -->
+        <div class="product-card reveal" id="ninhoNutella">
+          <div class="product-img-wrapper">
+            <img src="images/cookie_ninho_nutella.jpg" alt="Cookie Ninho com Nutella" loading="lazy">
+          </div>
+          <div class="product-info">
+            <h3 class="product-name">Ninho com Nutella</h3>
+            <p class="product-desc">Massa de leite Ninho que derrete na boca, recheada com muuuita Nutella de verdade!</p>
+            <div class="product-price">
+              <span class="price-current">R$ 14,00</span>
+            </div>
+            <a href="https://wa.me/5521974107949?text=Ol%C3%A1!%20Gostaria%20de%20pedir%20o%20cookie%20Ninho%20com%20Nutella!" target="_blank" rel="noopener" class="btn-pedir">
+              Pedir 🛒
+            </a>
+          </div>
+        </div>
+
+        <!-- Red Velvet com Nutella -->
+        <div class="product-card reveal" id="redVelvet">
+          <div class="product-img-wrapper">
+            <img src="images/cookie_red_velvet.jpg" alt="Cookie Red Velvet com Nutella" loading="lazy">
+          </div>
+          <div class="product-info">
+            <h3 class="product-name">Red Velvet com Nutella</h3>
+            <p class="product-desc">Massa red velvet crocante por fora, úmida por dentro, recheada com Nutella pura!</p>
+            <div class="product-price">
+              <span class="price-current">R$ 14,00</span>
+            </div>
+            <a href="https://wa.me/5521974107949?text=Ol%C3%A1!%20Gostaria%20de%20pedir%20o%20cookie%20Red%20Velvet%20com%20Nutella!" target="_blank" rel="noopener" class="btn-pedir">
+              Pedir 🛒
+            </a>
+          </div>
+        </div>
+
+        <!-- Churros -->
+        <div class="product-card reveal" id="churros">
+          <div class="product-img-wrapper">
+            <img src="images/cookie_churros.jpg" alt="Cookie Churros" loading="lazy">
+          </div>
+          <div class="product-info">
+            <h3 class="product-name">Churros</h3>
+            <p class="product-desc">Massa com canela e gotas de chocolate branco, recheado com doce de leite. Sabor de feira!</p>
+            <div class="product-price">
+              <span class="price-current">R$ 14,00</span>
+            </div>
+            <a href="https://wa.me/5521974107949?text=Ol%C3%A1!%20Gostaria%20de%20pedir%20o%20cookie%20Churros!" target="_blank" rel="noopener" class="btn-pedir">
+              Pedir 🛒
+            </a>
+          </div>
+        </div>
+
+      </div>
+    </div>
+  </section>
+
+  <!-- ==========================================
+       FATIAS
+       ========================================== -->
+  <section class="fatias-section" id="fatias">
+    <div class="container">
+      <h2 class="section-title reveal">🍰 Fatias</h2>
+      <p class="section-subtitle reveal">Porções individuais para matar a vontade</p>
+      <span class="section-divider reveal"></span>
+
+      <div class="fatias-grid">
+        <!-- Torta Cookie Tradicional com Nutella — ESGOTADO -->
+        <div class="product-card esgotado reveal" id="tortaCookieNutella">
+          <div class="product-img-wrapper">
+            <span class="product-badge badge-esgotado">Esgotado</span>
+            <img src="images/torta_cookie_nutella.jpg" alt="Torta Cookie Tradicional com Nutella — Fatia" loading="lazy">
+          </div>
+          <div class="product-info">
+            <h3 class="product-name">Torta Cookie Tradicional com Nutella</h3>
+            <p class="product-desc">A fatia mais amada pelos amantes de Nutella! Massa tradicional de cookie recheada generosamente.</p>
+            <div class="product-price">
+              <span class="price-current">R$ 22,00</span>
+            </div>
+            <span class="btn-pedir">Esgotado</span>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- ==========================================
+       PARA ENCOMENDAR
+       ========================================== -->
+  <section class="encomendas-section" id="encomendas">
+    <div class="container">
+      <h2 class="section-title reveal">📦 Para Encomendar</h2>
+      <p class="section-subtitle reveal">Doces especiais feitos sob medida para você</p>
+      <span class="section-divider reveal"></span>
+
+      <div class="encomenda-aviso reveal">
+        <span class="icon-aviso">⚠️</span>
+        <p>Todos os produtos deste grupo são feitos apenas <span>sob encomenda</span>!<br>Mínimo <span>24h de antecedência</span>.</p>
+      </div>
+
+      <div class="encomendas-grid">
+        <!-- Torta de Limão Inteira -->
+        <div class="product-card reveal" id="tortaLimao">
+          <div class="product-img-wrapper">
+            <img src="images/torta_limao.jpg" alt="Torta de Limão Inteira" loading="lazy">
+          </div>
+          <div class="product-info">
+            <h3 class="product-name">Torta de Limão Inteira</h3>
+            <p class="product-desc">Rende de 8 a 10 fatias, 25cm de diâmetro. A clássica torta de limão, refrescante e perfeita!</p>
+            <div class="product-price">
+              <span class="price-current">R$ 70,00</span>
+            </div>
+            <a href="https://wa.me/5521974107949?text=Ol%C3%A1!%20Gostaria%20de%20encomendar%20uma%20Torta%20de%20Lim%C3%A3o%20Inteira!" target="_blank" rel="noopener" class="btn-pedir">
+              Encomendar 📞
+            </a>
+          </div>
+        </div>
+
+        <!-- Torta Cookie Inteira -->
+        <div class="product-card reveal" id="tortaCookieInteira">
+          <div class="product-img-wrapper">
+            <img src="images/torta_cookie_inteira.jpg" alt="Torta Cookie Inteira" loading="lazy">
+          </div>
+          <div class="product-info">
+            <h3 class="product-name">Torta Cookie Inteira</h3>
+            <p class="product-desc">Escolha a massa e o recheio! Massas: tradicional ou chocolate. Perfeita para festas e comemorações.</p>
+            <div class="product-price">
+              <span class="price-current">R$ 150,00</span>
+            </div>
+            <a href="https://wa.me/5521974107949?text=Ol%C3%A1!%20Gostaria%20de%20encomendar%20uma%20Torta%20Cookie%20Inteira!" target="_blank" rel="noopener" class="btn-pedir">
+              Encomendar 📞
+            </a>
+          </div>
+        </div>
+
+        <!-- Bolo de Cenoura (Vulcão) -->
+        <div class="product-card reveal" id="boloCenoura">
+          <div class="product-img-wrapper">
+            <img src="images/bolo_cenoura.jpg" alt="Bolo de Cenoura Vulcão" loading="lazy">
+          </div>
+          <div class="product-info">
+            <h3 class="product-name">Bolo de Cenoura (Vulcão)</h3>
+            <p class="product-desc">Massa de cenoura macia e úmida, coberta com muito brigadeiro de chocolate. Irresistível!</p>
+            <div class="product-price">
+              <span class="price-current">R$ 45,00</span>
+            </div>
+            <a href="https://wa.me/5521974107949?text=Ol%C3%A1!%20Gostaria%20de%20encomendar%20um%20Bolo%20de%20Cenoura%20Vulc%C3%A3o!" target="_blank" rel="noopener" class="btn-pedir">
+              Encomendar 📞
+            </a>
+          </div>
+        </div>
+
+        <!-- Pavê de Chocolate -->
+        <div class="product-card reveal" id="paveChocolate">
+          <div class="product-img-wrapper">
+            <img src="images/pave_chocolate.jpg" alt="Pavê de Chocolate" loading="lazy">
+          </div>
+          <div class="product-info">
+            <h3 class="product-name">Pavê de Chocolate</h3>
+            <p class="product-desc">Creme branco e creme de chocolate intercalados. Sobremesa deliciosa e equilibrada!</p>
+            <div class="product-price">
+              <span class="price-current">R$ 65,00</span>
+            </div>
+            <a href="https://wa.me/5521974107949?text=Ol%C3%A1!%20Gostaria%20de%20encomendar%20um%20Pav%C3%AA%20de%20Chocolate!" target="_blank" rel="noopener" class="btn-pedir">
+              Encomendar 📞
+            </a>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- ==========================================
+       SOBRE NÓS
+       ========================================== -->
+  <section class="sobre-section" id="sobre">
+    <div class="container">
+      <h2 class="section-title reveal">Sobre Nós</h2>
+      <span class="section-divider reveal"></span>
+      <div class="sobre-content reveal">
+        <div class="sobre-icon">🏠</div>
+        <p>
+          A <strong>Recanto Deliciê</strong> é uma doceria artesanal de Santa Cruz, Rio de Janeiro, 
+          nascida do amor por doces e da vontade de levar sabor de verdade até você. 
+          Somos especializados em <strong>cookies recheados</strong>, feitos com ingredientes selecionados 
+          e muito carinho em cada etapa da produção.
+        </p>
+        <p>
+          Nossa produção é <strong>diária e fresquinha</strong> — cada cookie é assado na hora para 
+          garantir aquele crocante por fora e macio por dentro que todo mundo ama. 
+          Seja para um mimo pessoal ou para uma encomenda especial, estamos aqui para adoçar o seu dia! 💕
+        </p>
+      </div>
+    </div>
+  </section>
+
+  <!-- ==========================================
+       DEPOIMENTOS
+       ========================================== -->
+  <section class="depoimentos-section" id="depoimentos">
+    <div class="container">
+      <h2 class="section-title reveal">💬 O que dizem nossos clientes</h2>
+      <p class="section-subtitle reveal">A melhor propaganda é a satisfação de quem prova</p>
+      <span class="section-divider reveal"></span>
+
+      <div class="depoimentos-grid">
+        <div class="depoimento-card reveal">
+          <div class="depoimento-stars">★★★★★</div>
+          <p class="depoimento-text">"Os melhores cookies que já comi na vida! Crocantes por fora, macios por dentro e com recheio de verdade. Não consigo parar de pedir!"</p>
+          <div class="depoimento-autor">
+            <div class="depoimento-avatar">A</div>
+            <div>
+              <div class="depoimento-nome">Ana Clara</div>
+              <div class="depoimento-local">Santa Cruz, RJ</div>
+            </div>
+          </div>
+        </div>
+
+        <div class="depoimento-card reveal">
+          <div class="depoimento-stars">★★★★★</div>
+          <p class="depoimento-text">"Encomendei a torta cookie para o aniversário da minha filha e foi um sucesso absoluto! Todo mundo elogiou. Super recomendo!"</p>
+          <div class="depoimento-autor">
+            <div class="depoimento-avatar">M</div>
+            <div>
+              <div class="depoimento-nome">Mariana Souza</div>
+              <div class="depoimento-local">Santa Cruz, RJ</div>
+            </div>
+          </div>
+        </div>
+
+        <div class="depoimento-card reveal">
+          <div class="depoimento-stars">★★★★★</div>
+          <p class="depoimento-text">"O cookie de Ninho com Nutella é simplesmente divino! E o atendimento pelo WhatsApp é super rápido. Virei cliente fiel!"</p>
+          <div class="depoimento-autor">
+            <div class="depoimento-avatar">R</div>
+            <div>
+              <div class="depoimento-nome">Rafael Lima</div>
+              <div class="depoimento-local">Paciência, RJ</div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- ==========================================
+       INFORMAÇÕES E CONTATO
+       ========================================== -->
+  <section class="contato-section" id="contato">
+    <div class="container">
+      <h2 class="section-title reveal">📍 Informações & Contato</h2>
+      <p class="section-subtitle reveal">Fale conosco e faça seu pedido!</p>
+      <span class="section-divider reveal"></span>
+
+      <div class="contato-grid">
+        <div class="contato-item reveal">
+          <div class="contato-icon">📱</div>
+          <div class="contato-label">WhatsApp</div>
+          <div class="contato-value">
+            <a href="https://wa.me/5521974107949" target="_blank" rel="noopener">(21) 97410-7949</a>
+          </div>
+          <a href="https://wa.me/5521974107949" target="_blank" rel="noopener" class="contato-btn">
+            <svg width="16" height="16" viewBox="0 0 24 24" fill="currentColor"><path d="M17.472 14.382c-.297-.149-1.758-.867-2.03-.967-.273-.099-.471-.148-.67.15-.197.297-.767.966-.94 1.164-.173.199-.347.223-.644.075-.297-.15-1.255-.463-2.39-1.475-.883-.788-1.48-1.761-1.653-2.059-.173-.297-.018-.458.13-.606.134-.133.298-.347.446-.52.149-.174.198-.298.298-.497.099-.198.05-.371-.025-.52-.075-.149-.669-1.612-.916-2.207-.242-.579-.487-.5-.669-.51-.173-.008-.371-.01-.57-.01-.198 0-.52.074-.792.372-.272.297-1.04 1.016-1.04 2.479 0 1.462 1.065 2.875 1.213 3.074.149.198 2.096 3.2 5.077 4.487.709.306 1.262.489 1.694.625.712.227 1.36.195 1.871.118.571-.085 1.758-.719 2.006-1.413.248-.694.248-1.289.173-1.413-.074-.124-.272-.198-.57-.347m-5.421 7.403h-.004a9.87 9.87 0 01-5.031-1.378l-.361-.214-3.741.982.998-3.648-.235-.374a9.86 9.86 0 01-1.51-5.26c.001-5.45 4.436-9.884 9.888-9.884 2.64 0 5.122 1.03 6.988 2.898a9.825 9.825 0 012.893 6.994c-.003 5.45-4.437 9.884-9.885 9.884m8.413-18.297A11.815 11.815 0 0012.05 0C5.495 0 .16 5.335.157 11.892c0 2.096.547 4.142 1.588 5.945L.057 24l6.305-1.654a11.882 11.882 0 005.683 1.448h.005c6.554 0 11.89-5.335 11.893-11.893a11.821 11.821 0 00-3.48-8.413z"/></svg>
+            Abrir WhatsApp
+          </a>
+        </div>
+
+        <div class="contato-item reveal">
+          <div class="contato-icon">📸</div>
+          <div class="contato-label">Instagram</div>
+          <div class="contato-value">
+            <a href="https://instagram.com/recantodelicie" target="_blank" rel="noopener">@recantodelicie</a>
+          </div>
+        </div>
+
+        <div class="contato-item reveal">
+          <div class="contato-icon">📍</div>
+          <div class="contato-label">Localização</div>
+          <div class="contato-value">Santa Cruz, Rio de Janeiro</div>
+        </div>
+
+        <div class="contato-item reveal">
+          <div class="contato-icon">🕐</div>
+          <div class="contato-label">Horário</div>
+          <div class="contato-value">Seg–Sáb, 9h às 19h</div>
+        </div>
+      </div>
+
+      <div class="contato-nota reveal">
+        <p>🚗 Consulte taxa e área de entrega pelo WhatsApp</p>
+      </div>
+    </div>
+  </section>
+
+  <!-- ==========================================
+       RODAPÉ
+       ========================================== -->
+  <footer class="footer" id="rodape">
+    <div class="container">
+      <div class="footer-logo">
+        <svg width="36" height="36" viewBox="0 0 200 200" fill="none" xmlns="http://www.w3.org/2000/svg">
+          <rect width="200" height="200" rx="30" fill="#F49AC1"/>
+          <path d="M85 55c-22 0-40 18-40 40s18 40 40 40h5c-15-5-25-19-25-35s10-30 25-35h-5z" fill="white" stroke="white" stroke-width="6" stroke-linecap="round"/>
+          <path d="M65 95c0 22 16 40 35 40 16 0 30-12 35-28" fill="none" stroke="white" stroke-width="8" stroke-linecap="round"/>
+          <path d="M60 75c5-12 18-20 32-20 20 0 36 16 36 36 0 8-3 16-8 22" fill="none" stroke="white" stroke-width="8" stroke-linecap="round"/>
+          <circle cx="78" cy="115" r="10" fill="none" stroke="white" stroke-width="6"/>
+          <path d="M72 121c-4 8-6 18-4 22 3 5 8 3 10-2s4-14 2-18" fill="white"/>
+        </svg>
+        <span class="footer-logo-text">Recanto Deliciê</span>
+      </div>
+
+      <div class="footer-social">
+        <!-- Instagram -->
+        <a href="https://instagram.com/recantodelicie" target="_blank" rel="noopener" aria-label="Instagram">
+          <svg viewBox="0 0 24 24" fill="currentColor"><path d="M12 2.163c3.204 0 3.584.012 4.85.07 3.252.148 4.771 1.691 4.919 4.919.058 1.265.069 1.645.069 4.849 0 3.205-.012 3.584-.069 4.849-.149 3.225-1.664 4.771-4.919 4.919-1.266.058-1.644.07-4.85.07-3.204 0-3.584-.012-4.849-.07-3.26-.149-4.771-1.699-4.919-4.92-.058-1.265-.07-1.644-.07-4.849 0-3.204.013-3.583.07-4.849.149-3.227 1.664-4.771 4.919-4.919 1.266-.057 1.645-.069 4.849-.069zM12 0C8.741 0 8.333.014 7.053.072 2.695.272.273 2.69.073 7.052.014 8.333 0 8.741 0 12c0 3.259.014 3.668.072 4.948.2 4.358 2.618 6.78 6.98 6.98C8.333 23.986 8.741 24 12 24c3.259 0 3.668-.014 4.948-.072 4.354-.2 6.782-2.618 6.979-6.98.059-1.28.073-1.689.073-4.948 0-3.259-.014-3.667-.072-4.947-.196-4.354-2.617-6.78-6.979-6.98C15.668.014 15.259 0 12 0zm0 5.838a6.162 6.162 0 100 12.324 6.162 6.162 0 000-12.324zM12 16a4 4 0 110-8 4 4 0 010 8zm6.406-11.845a1.44 1.44 0 100 2.881 1.44 1.44 0 000-2.881z"/></svg>
+        </a>
+        <!-- WhatsApp -->
+        <a href="https://wa.me/5521974107949" target="_blank" rel="noopener" aria-label="WhatsApp">
+          <svg viewBox="0 0 24 24" fill="currentColor"><path d="M17.472 14.382c-.297-.149-1.758-.867-2.03-.967-.273-.099-.471-.148-.67.15-.197.297-.767.966-.94 1.164-.173.199-.347.223-.644.075-.297-.15-1.255-.463-2.39-1.475-.883-.788-1.48-1.761-1.653-2.059-.173-.297-.018-.458.13-.606.134-.133.298-.347.446-.52.149-.174.198-.298.298-.497.099-.198.05-.371-.025-.52-.075-.149-.669-1.612-.916-2.207-.242-.579-.487-.5-.669-.51-.173-.008-.371-.01-.57-.01-.198 0-.52.074-.792.372-.272.297-1.04 1.016-1.04 2.479 0 1.462 1.065 2.875 1.213 3.074.149.198 2.096 3.2 5.077 4.487.709.306 1.262.489 1.694.625.712.227 1.36.195 1.871.118.571-.085 1.758-.719 2.006-1.413.248-.694.248-1.289.173-1.413-.074-.124-.272-.198-.57-.347m-5.421 7.403h-.004a9.87 9.87 0 01-5.031-1.378l-.361-.214-3.741.982.998-3.648-.235-.374a9.86 9.86 0 01-1.51-5.26c.001-5.45 4.436-9.884 9.888-9.884 2.64 0 5.122 1.03 6.988 2.898a9.825 9.825 0 012.893 6.994c-.003 5.45-4.437 9.884-9.885 9.884m8.413-18.297A11.815 11.815 0 0012.05 0C5.495 0 .16 5.335.157 11.892c0 2.096.547 4.142 1.588 5.945L.057 24l6.305-1.654a11.882 11.882 0 005.683 1.448h.005c6.554 0 11.89-5.335 11.893-11.893a11.821 11.821 0 00-3.48-8.413z"/></svg>
+        </a>
+      </div>
+
+      <p class="footer-copy">© 2026 Recanto Deliciê. Todos os direitos reservados.</p>
+    </div>
+  </footer>
+
+  <!-- ==========================================
+       BOTÃO FLUTUANTE WHATSAPP
+       ========================================== -->
+  <a href="https://wa.me/5521974107949" target="_blank" rel="noopener" class="whatsapp-float" id="whatsappFloat" aria-label="Fale conosco pelo WhatsApp">
+    <svg viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg"><path d="M17.472 14.382c-.297-.149-1.758-.867-2.03-.967-.273-.099-.471-.148-.67.15-.197.297-.767.966-.94 1.164-.173.199-.347.223-.644.075-.297-.15-1.255-.463-2.39-1.475-.883-.788-1.48-1.761-1.653-2.059-.173-.297-.018-.458.13-.606.134-.133.298-.347.446-.52.149-.174.198-.298.298-.497.099-.198.05-.371-.025-.52-.075-.149-.669-1.612-.916-2.207-.242-.579-.487-.5-.669-.51-.173-.008-.371-.01-.57-.01-.198 0-.52.074-.792.372-.272.297-1.04 1.016-1.04 2.479 0 1.462 1.065 2.875 1.213 3.074.149.198 2.096 3.2 5.077 4.487.709.306 1.262.489 1.694.625.712.227 1.36.195 1.871.118.571-.085 1.758-.719 2.006-1.413.248-.694.248-1.289.173-1.413-.074-.124-.272-.198-.57-.347m-5.421 7.403h-.004a9.87 9.87 0 01-5.031-1.378l-.361-.214-3.741.982.998-3.648-.235-.374a9.86 9.86 0 01-1.51-5.26c.001-5.45 4.436-9.884 9.888-9.884 2.64 0 5.122 1.03 6.988 2.898a9.825 9.825 0 012.893 6.994c-.003 5.45-4.437 9.884-9.885 9.884m8.413-18.297A11.815 11.815 0 0012.05 0C5.495 0 .16 5.335.157 11.892c0 2.096.547 4.142 1.588 5.945L.057 24l6.305-1.654a11.882 11.882 0 005.683 1.448h.005c6.554 0 11.89-5.335 11.893-11.893a11.821 11.821 0 00-3.48-8.413z"/></svg>
+  </a>
+
+  <!-- JavaScript -->
+  <script src="script.js"></script>
+</body>
+</html>
